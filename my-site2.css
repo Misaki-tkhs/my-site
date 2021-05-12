@@ -29,6 +29,7 @@ header a {
   margin-bottom: 60px;
   white-space: nowrap;
   animation: titleAnimation 1.5s;
+  text-decoration: none;
 }
 
 hr{
@@ -43,34 +44,29 @@ main {
   margin: 50px auto;
 }
 
-.profileContents {
-  font-size: 20px;
-  line-height: 27px;
-  margin-top: 70px;
-  animation: titleAnimation 4s;
-  transition: 1.5s .2s;
-}
-
-.aboutContents {
-  margin-bottom: 150px;
-  transition: 3s .2s;
-}
-
-.aboutContents p {
-  font-size: 25px;
-  line-height: 40px;
-  margin-bottom: 50px;
-}
-
-.aboutContents a {
-  color: azure;
-}
-
 h2 {
   font-size: 60px;
   letter-spacing: 2px;
-  margin: 5px;
+  margin: 10px;
   animation: titleAnimation 3s;
+}
+
+img {
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  opacity: 1;
+  animation: titleAnimation 5s;
+  box-shadow: 10px 13px sandybrown;
+}
+
+.profileContents {
+  font-size: 20px;
+  line-height: 27px;
+  margin-top: 30px;
+  animation: titleAnimation 4s;
+  transition: 1.5s .2s;
 }
 
 h3 {
@@ -81,14 +77,67 @@ h3 {
   animation: titleAnimation 5s;
 }
 
-img {
-  margin: 0 auto;
-  width: 100%;
-  display: block;
-  border-radius: 5px;
-  opacity: 1;
-  transform: translate(0, 45px);
-  animation: titleAnimation 4s;
-  transition: 1s .3s;
-  box-shadow: 10px 13px sandybrown;
+.aboutContents {
+  font-size: 20px;
+  line-height: 27px;
+  margin-top: 30px;
+  transition: 1.5s .2s;
+}
+
+.aboutContents p {
+  line-height: 40px;
+  margin-bottom: 50px;
+}
+
+.aboutContents a {
+  color: azure;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width:650px) {
+  main {
+    margin: 20px auto;
+  }
+
+  hr{
+    margin-bottom: 20px;
+  }
+  
+  header {
+    padding: 20px;
+  }
+
+  header a {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+
+  .profileContents {
+    font-size: 10px;
+    line-height: 17px;
+    margin-top: 20px;
+  }
+
+  h3 {
+    margin-top: 60px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    animation: titleAnimation 5s;
+  }
+
+  .aboutContents {
+    margin-bottom: 30px;
+  }
+
+  .aboutContents p {
+    font-size: 11px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
 }

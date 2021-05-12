@@ -30,6 +30,7 @@ header a {
   margin-bottom: 60px;
   white-space: nowrap;
   animation: titleAnimation 1.5s;
+  text-decoration: none;
 }
 
 hr{
@@ -143,7 +144,16 @@ main {
   transition: 1s .3s;
 }
 
+
 @media screen and (max-width:650px) {
+  header {
+    padding: 20px;
+  }
+
+  hr{
+    margin-bottom: 40px;
+  }
+
 	header a {
     font-size: 30px;
     font-weight: bold;
