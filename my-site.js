@@ -1,5 +1,3 @@
-'use strict';
-
 const targetElement = document.querySelectorAll
 (".animationTarget");
 
@@ -12,6 +10,5 @@ document.addEventListener("scroll",function() {
 
     if (window.innerHeight > getElementDistance){
     targetElement[i].classList.add("show")
-    }
   }
-})
+}})

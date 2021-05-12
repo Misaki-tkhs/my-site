@@ -1,5 +1,3 @@
-
-
 const animationTargetElements = document.querySelectorAll(".textAnimation");
 for (let i = 0; i < animationTargetElements.length; i++) {
   const targetElement = animationTargetElements[i];
